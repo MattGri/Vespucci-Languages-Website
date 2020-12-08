@@ -145,3 +145,53 @@ table {
     margin-bottom: 43px;
     line-height: 25px;
 }
+
+.container .offer{
+    padding-bottom: 60px;
+}
+
+.container .offer .title{
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.container .offer .wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .offer .wrapper .box{
+    width: 33.33%;
+    margin-bottom: 77px;
+}
+
+.container .offer .wrapper .box .image{
+    margin: 0 auto;
+    display: block;
+}
+
+.container .offer .wrapper .box .subtitle{
+    font-size: 20px;
+    margin: 30px 0px 35px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container .offer .wrapper .box .text{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.container .offer .wrapper .box .learn{
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: #0E63E3;
+    background-color: #fff;
+}
