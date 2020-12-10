@@ -53,6 +53,57 @@ table {
     margin: 0 auto;
 }
 
+.container .vespucci{
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.container .vespucci .box{
+    margin-right: 350px; 
+}
+
+.container .vespucci .wrapper{
+    display: flex;
+    align-items: center;
+}
+.container .vespucci .wrapper li{
+    margin-right: 50px;
+}
+
+.container .vespucci .wrapper .items{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.container .vespucci .wrapper .home{
+    color: #919191;
+}
+.container .vespucci .wrapper .home:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+.container .vespucci .wrapper .instant{
+    color: #fff;
+    background-color: #0e63e3;
+    border: none;
+    cursor: pointer;
+    padding: 11px 40px 11px 40px;
+    font-size: 15px;
+    border: 1px solid #0e63e3;
+}
+.container .vespucci .wrapper .instant:hover{
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
+    border: 1px solid #0e63e3;
+}
+
 .create{
     padding: 90px 0px 75px 0px;
     position: relative;
