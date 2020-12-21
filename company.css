@@ -1,0 +1,306 @@
+*{
+	box-sizing: border-box;	
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Montserrat", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    width: 1285px;
+    margin: 0 auto;
+}
+
+.container .vespucci{
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.container .vespucci .box{
+    margin-right: 350px; 
+}
+
+.container .vespucci .wrapper{
+    display: flex;
+    align-items: center;
+}
+.container .vespucci .wrapper li{
+    margin-right: 50px;
+}
+
+.container .vespucci .wrapper .items{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.container .vespucci .wrapper .company{
+    color: #919191;
+}
+.container .vespucci .wrapper .company:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+.container .vespucci .wrapper .instant{
+    color: #fff;
+    background-color: #0e63e3;
+    border: none;
+    cursor: pointer;
+    padding: 11px 40px 11px 40px;
+    font-size: 15px;
+    border: 1px solid #0e63e3;
+}
+.container .vespucci .wrapper .instant:hover{
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
+    border: 1px solid #0e63e3;
+}
+
+.container .company{
+    padding: 68px 0px 62px 0px;
+}
+
+.container .company .wrapper{
+    display: flex;
+}
+
+.container .company .wrapper .wrapper-left{
+    width: 50%;
+}
+
+.container .company .wrapper .wrapper-left .title{
+    font-size: 75px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.container .company .wrapper .wrapper-left .image{
+    display: block;
+    margin: 0 auto;
+}
+
+.container .company .wrapper .wrapper-right{
+    width: 50%;
+}
+
+.container .company .wrapper .wrapper-right .text{
+    font-size: 16px;
+    margin-bottom: 35px;
+    line-height: 20px;
+}
+
+
+.container .price{
+    padding: 40px 0px 50px 0px;
+    background-color: #f1f5f7;
+    height: 182px;
+    margin-bottom: 65px;
+}
+
+.container .price .title{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px 0px 27px 78px;
+    color: #000;
+}
+
+.container .price .text{
+    color: #69808C;
+    font-size: 14px;
+    margin-left: 78px;
+    line-height: 22px;
+}
+
+.container .price .instant{
+    color: #fff;
+    background-color: #0e63e3;
+    border: none;
+    cursor: pointer;
+    padding: 22px 17px 19px 21px;
+    font-size: 17px;
+    border: 1px solid #0e63e3;
+    position: relative;
+    left: 900px;
+    bottom: 88px;
+}
+
+.container .price .instant:hover{
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
+    border: 1px solid #0e63e3;
+}
+
+.container .offer .title{
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.container .offer .wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .offer .wrapper .box{
+    width: 33.33%;
+    margin-bottom: 77px;
+}
+
+.container .offer .wrapper .box .image{
+    margin: 0 auto;
+    display: block;
+}
+
+.container .offer .wrapper .box .subtitle{
+    font-size: 20px;
+    margin: 22px 0px 18px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container .offer .wrapper .box .text{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.container .team .title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+
+.container .team .image{
+    display: block;
+    margin: 0 auto;
+}
+
+.project{
+    background-color: #f1f5f7;
+    padding: 48px 0px;
+}
+
+.project .container .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project .container .wrapper .box .wrapper-box{
+    display: flex;
+    margin-bottom: 21px;
+}
+
+.project .container .wrapper .box .wrapper-box .text{
+    margin-left: 7px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.project .container .wrapper .box .text{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.project .container .wrapper .box .decoration{
+    text-decoration: none;
+}
+
+.project .container .wrapper .box .small{
+    font-size: 10px;
+    color: #cdd5e1;
+}
+
+.project .container .wrapper .box .title{
+    font-size: 40px;
+    font-weight: 600px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.project .container .wrapper .box .wrapper-box1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project .container .wrapper .box .discuss{
+    color: #fff;
+    background-color: #0e63e3;
+    border: none;
+    cursor: pointer;
+    padding: 20px 26px;
+    font-size: 17px;
+    border: 1px solid #0e63e3;
+    display: block;
+    margin: 0 auto;
+}
+
+.project .container .wrapper .box .discuss:hover{
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
+    border: 1px solid #0e63e3;
+}
+
+.project .container .wrapper .box .items{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.project .container .wrapper .box .margin{
+    margin-bottom: 10px;
+}
