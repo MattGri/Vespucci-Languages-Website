@@ -1,6 +1,5 @@
 *{
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
 
 html, body, div, span, applet, object, iframe,
@@ -79,10 +78,10 @@ table {
     font-size: 15px;
 }
 
-.container .vespucci .wrapper .linguists{
+.container .vespucci .wrapper .blog{
     color: #919191;
 }
-.container .vespucci .wrapper .linguists:hover{
+.container .vespucci .wrapper .blog:hover{
     color: #000;
     transition: 0.5s;
 }
@@ -103,56 +102,111 @@ table {
     border: 1px solid #0e63e3;
 }
 
-.container .linguist{
-    padding: 95px 0px 45px 0px;
+.good{
+    background-color: #003366;
+    padding: 90px 0px 72px 0px;
 }
 
-.container .linguist .wrapper{
+.good .wrapper{
     display: flex;
 }
 
-.container .linguist .wrapper .wrapper-right{
+.good .wrapper .left-wrapper{
     width: 50%;
 }
 
-.container .linguist .wrapper .wrapper-right .title{
-    font-size: 75px;
-    font-weight: 600;
-    line-height: 90px;
-}
-
-.container .linguist .wrapper .wrapper-right .text{
-    margin-top: 80px;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.container .linguist .wrapper .wrapper-right .text2{
-    margin-top: 28px;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.container .linguist .wrapper .wrapper-right .join{
+.good .wrapper .left-wrapper .title{
     color: #fff;
-    background-color: #0e63e3;
-    border: none;
-    cursor: pointer;
-    padding: 21px 49px 21px 48px;
-    font-size: 17px;
-    border: 1px solid #0e63e3;
-    margin-top: 24px;
+    font-size: 75px;
+    line-height: 90px;
+    font-weight: 600;
+    margin-bottom: 85px;
 }
 
-.container .linguist .wrapper .wrapper-right .join:hover{
+.good .wrapper .left-wrapper .text{
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.good .wrapper .left-wrapper .instant{
+    cursor: pointer;
+    color: #fff;
+    padding: 22px 21px;
+    background-color: #0e63e3;
+    border: 1px solid #0e63e3;
+    font-size: 17px;
+}
+
+.good .wrapper .left-wrapper .instant:hover{
     color: #000;
     background-color: #fff;
     transition: 0.5s;
-    border: 1px solid #0e63e3;
 }
 
-.container .linguist .wrapper .wrapper-left{
+.good .wrapper .right-wrapper{
     width: 50%;
+}
+
+.good .wrapper .right-wrapper .image{
+    display: block;
+    margin: 0 auto;
+}
+
+.container .blog{
+    padding: 85px 0px 40px 0px;
+}
+
+.container .blog .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .blog .wrapper .box{
+    border: 1px solid #000;
+    width: 40%;
+    padding-bottom: 55px;
+}
+
+.container .blog .wrapper .box .padding{
+    padding: 32px 43px 0px 28px;
+}
+
+.container .blog .wrapper .box .padding .title{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 21px;
+    line-height: 30px;
+}
+
+.container .blog .wrapper .box .padding .title:hover{
+    color: #0e63e3;
+    cursor: pointer;
+}
+
+.container .blog .wrapper .box .padding .text{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 47px;
+}
+
+.container .blog .wrapper .box .padding .text:hover{
+    color: #0e63e3;
+    cursor: pointer;
+}
+
+.container .blog .wrapper .box .padding .line{
+    display: block;
+    width: 450px;
+    background-color: #ccc;
+    margin: 0 auto;
+    height: 1px;
+}
+
+.container .blog .wrapper .box .padding .heart{
+    margin-top: 17px;
+    cursor: pointer;
 }
 
 .project{
@@ -233,87 +287,4 @@ table {
     margin-bottom: 10px;
 }
 
-@media(max-width:1400px){
-    .project .container .wrapper{
-        padding: 0px 100px;
-    }
-    .container .linguist{
-        padding: 95px 100px 45px 100px;
-    }
-    .container .vespucci .box{
-        margin: 0 auto;
-    }
-    .container .vespucci .navigation{
-        display: none;
-    }
-}
 
-@media(max-width:1200px){
-    .project .container .wrapper{
-        /* justify-content: column; */
-        flex-wrap: wrap;
-    }
-    .project .container .wrapper .box{
-        width: 100%;
-    }
-    .project .container .wrapper .box .wrapper-box img{
-        display: block;
-        margin: 0 auto;
-        
-    }
-    .project .container .wrapper .box .wrapper-box .text{
-        text-align: center;
-    }
-    .project .container .wrapper .box ul li{
-        text-align: center;
-    }
-    .project .container .wrapper .box .text{
-        text-align: center;
-    }
-    .project .container .wrapper .box .small{
-        text-align: center;
-    }
-    .project .container .wrapper .box .wrapper-box1{
-        display: block;
-        margin: 0 auto;
-        
-    }
-    .project .container .wrapper .box .wrapper-box1 img{
-        display: block;
-        margin: 0 auto;
-    }
-    .container .linguist .wrapper{
-        flex-wrap: wrap;
-    }
-    .container .linguist .wrapper .wrapper-right{
-        width: 100%;
-    } 
-    .container .linguist .wrapper .wrapper-right .title{
-        text-align: center;
-    }
-    .container .linguist .wrapper .wrapper-right .text{
-        text-align: center;
-    }
-    .container .linguist .wrapper .wrapper-right .text2{
-        text-align: center;
-    }
-    .container .linguist .wrapper .wrapper-right .join{
-        display: block;
-        margin: 0 auto;
-    }
-    .container .linguist .wrapper .wrapper-left{
-        width: 100%;
-    }
-    .container .linguist .wrapper .wrapper-left img{
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-
-@media(max-width: 900px){
-    .container{
-        width: 100%;
-        padding: 0 20px;
-    }
-}
