@@ -92,7 +92,7 @@ table {
     background-color: #0e63e3;
     border: none;
     cursor: pointer;
-    padding: 11px 40px 11px 40px;
+    padding: 6px;
     font-size: 15px;
     border: 1px solid #0e63e3;
 }
@@ -304,3 +304,127 @@ table {
 .project .container .wrapper .box .margin{
     margin-bottom: 10px;
 }
+
+
+
+@media(max-width: 1300px){
+    .container{
+        width: 1100px;
+    }
+}
+
+@media(max-width: 1100px){
+    .container{
+        width: 900px;
+    }
+    .container .vespucci{
+        display: none;
+    }
+    .container .price{
+        height: 300px;
+        width: 100%;
+        padding-right: 60px;
+    }
+    .container .price .title{
+        text-align: center;
+    }
+    .container .price .text{
+        text-align: center;
+    }
+    .container .price .instant{
+        position: static;
+        margin: 50px auto 0 auto;
+        display: block;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .container .company .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .company .wrapper .wrapper-left{
+        width: 100%;
+    }
+    .container .company .wrapper .wrapper-left .image{
+        margin-bottom: 50px;
+    }
+    .container .company .wrapper .wrapper-right{
+        width: 100%;
+        text-align: center;
+    }
+    .container .team .image{
+        width: 100%;
+    }
+    .container .offer .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .offer .wrapper .box{
+        width: 100%;
+    }
+    .project .container .wrapper{
+        flex-wrap: wrap;
+    }
+    .project .container .wrapper .box{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .project .container .wrapper .box .wrapper-box{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .wrapper-box img{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .small{
+        text-align: center;
+    }
+    .project .container .wrapper .box .text{
+        text-align: center;
+    }
+    .project .container .wrapper .box .wrapper-box1{
+        justify-content: center;
+    }
+    .project .container .wrapper .box .wrapper-box1 img{
+        display: block;
+       margin-left: 20px;
+    }
+    .project .container .wrapper .box .margin{
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 500px){
+    .container .price{
+       height: 400px;
+    }
+    .container .price .instant{
+        margin-left: 175px;
+    }
+}
+
+@media(max-width: 400px){
+    .container .price{
+       height: 500px;
+    }
+    .container .price .instant{
+        margin-left: 125px;
+    }
+}
+
+
+@media(max-width: 400px){
+    .container .company .wrapper .wrapper-left .title{
+        font-size: 50px;
+    }
+    .container .price .instant{
+        margin-left: 92px;
+        padding: 10px;
+    }
+}
+
