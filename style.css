@@ -92,7 +92,7 @@ table {
     background-color: #0e63e3;
     border: none;
     cursor: pointer;
-    padding: 11px 40px 11px 40px;
+    padding: 6px;
     font-size: 15px;
     border: 1px solid #0e63e3;
 }
@@ -103,14 +103,23 @@ table {
     border: 1px solid #0e63e3;
 }
 
-.create{
+.container .create{
     padding: 90px 0px 75px 0px;
-    position: relative;
+    display: flex;
 }
-.container .create .image{
+
+.container .create .box-left{
+    width: 50%;
+}
+
+.container .create .box-right{
+    width: 50%;
+}
+
+/* .container .create .image{
     position: absolute;
     left: 700px;
-}
+} */
 
 .container .create .title{
     font-size: 75px;
@@ -165,6 +174,15 @@ table {
     background-color: #f1f5f7;
     height: 182px;
     margin-bottom: 65px;
+    display: flex;
+}
+
+.container .price .leftbox{
+    width: 50%;
+}
+
+.container .price .rightbox{
+    width: 50%;
 }
 
 .container .price .title{
@@ -172,6 +190,7 @@ table {
     font-weight: 600;
     margin: 0px 0px 27px 78px;
     color: #000;
+    text-align: center;
 }
 
 .container .price .text{
@@ -179,6 +198,7 @@ table {
     font-size: 14px;
     margin-left: 78px;
     line-height: 22px;
+    text-align: center;
 }
 
 .container .price .instant{
@@ -189,9 +209,11 @@ table {
     padding: 22px 17px 19px 21px;
     font-size: 17px;
     border: 1px solid #0e63e3;
-    position: relative;
+    display: block;
+    margin: 0 auto;
+    /* position: relative;
     left: 900px;
-    bottom: 88px;
+    bottom: 88px; */
 }
 
 .container .price .instant:hover{
@@ -426,4 +448,176 @@ table {
 
 .project .container .wrapper .box .margin{
     margin-bottom: 10px;
+}
+
+@media(max-width: 1200px){
+    .container .vespucci{
+        display: none;
+   }
+   .container .vespucci .box{
+       margin-right: 0;
+   }
+    .container .create{
+        flex-wrap: wrap;
+    }
+    .container .create .box-right{
+        width: 100%;
+    }
+    .container .create .box-right .title{
+        text-align: center;
+    }
+    .container .create .box-right .text{
+        text-align: center;
+    }
+    .container .create .box-right .box{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .container .create .box-left{
+        width: 100%;
+    }
+    .container .create .box-left .image{
+        display: block;
+        margin: 0 auto;
+    }
+    .container .offer .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .offer .wrapper .box{
+        width: 100%;
+    }
+    .industries .container .wrapper-up{
+        flex-wrap: wrap;
+    }
+    .industries .container .wrapper-up .box{
+        width: 100%;
+    }
+    .industries .line{
+        display: none;
+    }
+    .industries .container .wrapper-down{
+        flex-wrap: wrap;
+    }
+    .industries .container .wrapper-down .box{
+        width: 100%;
+    }
+    .container .key{
+        flex-wrap: wrap;
+    }
+    .container .key .leftwrapper{
+        width: 100%;
+    }
+    .container .key .leftwrapper .title{
+        text-align: center;
+    }
+    .container .key .leftwrapper img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .container .key .rightwrapper{
+        width: 100%;
+    }
+    .container .key .rightwrapper .subtitle{
+        text-align: center;
+    }
+    .container .key .rightwrapper .text{
+        text-align: center;
+    }
+    .container .price{
+        flex-wrap: wrap;
+    }
+    .container .price .leftbox{
+        width: 100%;
+    }
+    .container .price .rightbox{
+        width: 100%;
+    }
+    .project .container .wrapper{
+        flex-wrap: wrap;
+    }
+    .project .container .wrapper .box{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .project .container .wrapper .box .wrapper-box{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .wrapper-box img{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .small{
+        text-align: center;
+    }
+    .project .container .wrapper .box .text{
+        text-align: center;
+    }
+    .project .container .wrapper .box .wrapper-box1{
+        justify-content: center;
+    }
+    .project .container .wrapper .box .wrapper-box1 img{
+        display: block;
+       margin-left: 20px;
+    }
+    .project .container .wrapper .box .margin{
+        text-align: center;
+    }
+}
+
+@media(max-width: 1100px){
+    .container{
+        width: 900px;
+    }
+    .container .price{
+        height: 300px;
+    }
+    .container .price .rightbox .instant{
+        margin-left: 405px;
+    }
+ }
+
+@media(max-width: 900px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .container .price .leftbox .title{
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .container .price .leftbox .text{
+        margin: 0px;
+    }
+    .container .price .rightbox .instant{
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media(max-width: 500px){
+    .container .create .box-right .title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .container .create .box-left .image{
+        width: 100%;
+    }
+}
+
+@media(max-width: 320px){
+    .container .create .box .instant{
+        margin-bottom: 20px;
+        margin-left: 10px;
+        padding: 20px 26px;
+    }
+    .container .price .leftbox .text{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .container .key .leftwrapper img{
+        width: 100%;
+    }
 }
