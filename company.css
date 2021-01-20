@@ -143,6 +143,15 @@ table {
     background-color: #f1f5f7;
     height: 182px;
     margin-bottom: 65px;
+    display: flex;
+}
+
+.container .price .leftbox{
+    width: 50%;
+}
+
+.container .price .rightbox{
+    width: 50%;
 }
 
 .container .price .title{
@@ -167,9 +176,8 @@ table {
     padding: 22px 17px 19px 21px;
     font-size: 17px;
     border: 1px solid #0e63e3;
-    position: relative;
-    left: 900px;
-    bottom: 88px;
+    display: block;
+    margin: 0 auto;
 }
 
 .container .price .instant:hover{
@@ -321,20 +329,22 @@ table {
         display: none;
     }
     .container .price{
-        height: 300px;
+        flex-wrap: wrap;
+    }
+    .container .price .leftbox{
         width: 100%;
-        padding-right: 60px;
     }
-    .container .price .title{
+    .container .price .rightbox{
+        width: 100%;
+    }
+    .container .price{
+        height: 300px;
+    }
+    .container .price .leftbox{
         text-align: center;
     }
-    .container .price .text{
-        text-align: center;
-    }
-    .container .price .instant{
-        position: static;
-        margin: 50px auto 0 auto;
-        display: block;
+    .container .price .rightbox .instant{
+        margin-left: 405px;
     }
 }
 
@@ -396,6 +406,17 @@ table {
     .project .container .wrapper .box .margin{
         text-align: center;
     }
+    .container .price .leftbox .title{
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .container .price .leftbox .text{
+        margin: 0px;
+    }
+    .container .price .rightbox .instant{
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 
@@ -410,21 +431,21 @@ table {
 
 @media(max-width: 400px){
     .container .price{
-       height: 500px;
+       height: 400px;
     }
     .container .price .instant{
         margin-left: 125px;
     }
-}
-
-
-@media(max-width: 400px){
     .container .company .wrapper .wrapper-left .title{
         font-size: 50px;
     }
-    .container .price .instant{
-        margin-left: 92px;
-        padding: 10px;
+}
+
+@media(max-width: 320px){
+    .container .price .leftbox .text{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 30px;
     }
 }
 
