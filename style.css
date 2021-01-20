@@ -190,7 +190,6 @@ table {
     font-weight: 600;
     margin: 0px 0px 27px 78px;
     color: #000;
-    text-align: center;
 }
 
 .container .price .text{
@@ -198,7 +197,6 @@ table {
     font-size: 14px;
     margin-left: 78px;
     line-height: 22px;
-    text-align: center;
 }
 
 .container .price .instant{
@@ -211,9 +209,6 @@ table {
     border: 1px solid #0e63e3;
     display: block;
     margin: 0 auto;
-    /* position: relative;
-    left: 900px;
-    bottom: 88px; */
 }
 
 .container .price .instant:hover{
@@ -616,6 +611,9 @@ table {
         font-size: 13px;
         line-height: 20px;
         margin-bottom: 30px;
+    }
+    .container .price .text{
+        text-align: center;
     }
     .container .key .leftwrapper img{
         width: 100%;
