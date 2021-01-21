@@ -161,6 +161,15 @@ table {
     background-color: #f1f5f7;
     height: 182px;
     margin-bottom: 65px;
+    display: flex;
+}
+
+.container .price .leftbox{
+    width: 50%;
+}
+
+.container .price .rightbox{
+    width: 50%;
 }
 
 .container .price .title{
@@ -185,9 +194,8 @@ table {
     padding: 22px 17px 19px 21px;
     font-size: 17px;
     border: 1px solid #0e63e3;
-    position: relative;
-    left: 900px;
-    bottom: 88px;
+    display: block;
+    margin: 0 auto;
 }
 
 .container .price .instant:hover{
@@ -368,3 +376,162 @@ table {
 .project .container .wrapper .box .margin{
     margin-bottom: 10px;
 }
+
+
+@media(max-width: 1200px){
+    .container .vespucci{
+        display: none;
+   }
+   .container .vespucci .box{
+       margin-right: 0;
+   }
+   .container .price{
+    flex-wrap: wrap;
+}
+.container .price .leftbox{
+    width: 100%;
+}
+.container .price .rightbox{
+    width: 100%;
+}
+}
+
+
+@media(max-width: 1100px){
+    .container{
+        width: 900px;
+    }
+    .container .price{
+        height: 300px;
+    }
+    .container .price .rightbox .instant{
+        margin-left: 405px;
+    }
+ }
+
+
+ @media(max-width: 900px){
+     .container{
+         width: 100%;
+         padding: 0 20px;
+     }
+     .container .industry .wrapper{
+         flex-wrap: wrap;
+     }
+     .container .industry .wrapper .leftwrapper{
+         width: 100%;
+     }
+     .container .industry .wrapper .leftwrapper .title{
+        text-align: center;
+        line-height: 80px;
+        margin-bottom: 30px;
+    }
+     .container .industry .wrapper .rightwrapper{
+        width: 100%;
+        text-align: center;
+    }
+    .container .company .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .company .wrapper .box{
+        width: 100%;
+    }
+     .container .price .leftbox .title{
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .container .price .leftbox .text{
+        margin: 0px;
+        text-align: center;
+    }
+    .container .price .rightbox .instant{
+        margin: 0 auto;
+        display: block;
+    }
+    .container .offer .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .offer .wrapper .box{
+        width: 100%;
+    }
+    .container .knowledge .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .knowledge .wrapper .leftbox{
+        width: 100%;
+        text-align: center;
+    }
+    .container .knowledge .wrapper .leftbox .title{
+        text-align: center;
+        margin: 30px;
+    }
+    .container .knowledge .wrapper .leftbox .know{
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+    .container .knowledge .wrapper .rightbox{
+        width: 100%;
+    }
+    .project .container .wrapper{
+        flex-wrap: wrap;
+    }
+    .project .container .wrapper .box{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .project .container .wrapper .box .wrapper-box{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .wrapper-box img{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .small{
+        text-align: center;
+    }
+    .project .container .wrapper .box .text{
+        text-align: center;
+    }
+    .project .container .wrapper .box .wrapper-box1{
+        justify-content: center;
+    }
+    .project .container .wrapper .box .wrapper-box1 img{
+        display: block;
+       margin-left: 20px;
+    }
+    .project .container .wrapper .box .margin{
+        text-align: center;
+    }
+
+ }
+
+ @media(max-width: 500px){
+     .container .industry .wrapper .leftwrapper .title{
+         font-size: 40px;
+         line-height: 45px;
+     }
+     .container .industry .wrapper .rightwrapper .text{
+         font-size: 15px;
+     }
+ }
+
+ @media(max-width: 400px){
+     .container .knowledge .wrapper .leftbox .title{
+         font-size: 35px;
+     }
+     .container .knowledge .wrapper .rightbox .image{
+        width: 100%;
+    }
+ }
+
+ @media(max-width: 320px){
+    .container .price .leftbox .text{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .container .price .text{
+        text-align: center;
+    }
+ }
