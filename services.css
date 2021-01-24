@@ -93,7 +93,7 @@ table {
     background-color: #0e63e3;
     border: none;
     cursor: pointer;
-    padding: 11px 40px 11px 40px;
+    padding: 6px;
     font-size: 15px;
     border: 1px solid #0e63e3;
 }
@@ -205,6 +205,15 @@ table {
     background-color: #f1f5f7;
     height: 182px;
     margin-bottom: 65px;
+    display: flex;
+}
+
+.container .price .leftbox{
+    width: 50%;
+}
+
+.container .price .rightbox{
+    width: 50%;
 }
 
 .container .price .title{
@@ -229,9 +238,8 @@ table {
     padding: 22px 17px 19px 21px;
     font-size: 17px;
     border: 1px solid #0e63e3;
-    position: relative;
-    left: 900px;
-    bottom: 88px;
+    display: block;
+    margin: 0 auto;
 }
 
 .container .price .instant:hover{
@@ -322,4 +330,125 @@ table {
 
 .project .container .wrapper .box .margin{
     margin-bottom: 10px;
+}
+
+@media(max-width: 1200px){
+    .container .vespucci{
+        display: none;
+     }
+    .container .vespucci .box{
+        margin-right: 0;
+    }
+    .container .price{
+        flex-wrap: wrap;
+    }
+    .container .price .leftbox{
+        width: 100%;
+    }
+    .container .price .rightbox{
+        width: 100%;
+    }
+   .project .container .wrapper{
+    flex-wrap: wrap;
+    }
+    .project .container .wrapper .box{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .project .container .wrapper .box .wrapper-box{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .wrapper-box img{
+        margin: 0 auto;
+        display: block;
+    }
+    .project .container .wrapper .box .small{
+        text-align: center;
+    }
+    .project .container .wrapper .box .text{
+        text-align: center;
+    }
+    .project .container .wrapper .box .wrapper-box1{
+        justify-content: center;
+    }
+    .project .container .wrapper .box .wrapper-box1 img{
+        display: block;
+    margin-left: 20px;
+    }
+    .project .container .wrapper .box .margin{
+        text-align: center;
+    }
+}
+
+@media(max-width: 1100px){
+    .container{
+        width: 900px;
+    }
+    .container .expertise .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .expertise .wrapper-right{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .container .expertise .wrapper-left{
+        width: 100%;
+    }
+    .container .expertise .wrapper-left img{
+        margin: 0 auto;
+        display: block;
+    }
+    .container .offer .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .offer .wrapper .box{
+        width: 100%;
+    }
+    .container .price{
+        height: 300px;
+    }
+    .container .price .leftbox .text{
+        text-align: center;
+    }
+    .container .price .rightbox .instant{
+        margin-left: 405px;
+    }
+    .container .team .image{
+        width: 100%;
+    }
+ }
+
+
+@media(max-width: 900px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .container .price .leftbox .title{
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .container .price .leftbox .text{
+        margin: 0px;
+    }
+    .container .price .rightbox .instant{
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .container .expertise .wrapper .wrapper-right .title{
+        font-size: 33px;
+    }
+    .container .expertise .wrapper .wrapper-right .text{
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+    }
+    .container .expertise .wrapper .wrapper-left img{
+        width: 100%;
+    }
 }
