@@ -1,5 +1,16 @@
-# Vespucci Languages Website
- 
-Copy of a website using HTML and CSS (I wrote it with my code)
+# Project Overview  🎉
+Copy of a website written by myself
 
+# Technologies 🔧
+* HTML
+
+* CSS
+
+# Issues 🔍
+ 
+ If you have any issues, please let me know on mateusz.grzybowski98@gmail.com
+
+# License 🔱
+
+All copyrights belongs to Vespucci Languages
 https://www.vespuccilanguages.com/
